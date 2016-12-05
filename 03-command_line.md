@@ -26,7 +26,7 @@ pwd: view the current working directory path
 
 The common redirection commands are:
 
-> redirects standard output of a command to a file, overwriting previous content.
+""">""" redirects standard output of a command to a file, overwriting previous content.
 
 
 
