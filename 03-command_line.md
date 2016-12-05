@@ -66,7 +66,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls` lists files in current working directory  
+`ls -a`  lists all files in current working directory
+`ls -l`  lists files in current working directory but in long format
+`ls -lh`  
+`ls -lah`  
+`ls -t`  
+`ls -Glp`  
+
 
 ---
 
