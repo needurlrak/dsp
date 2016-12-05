@@ -29,14 +29,15 @@ The common redirection commands are:
 > redirects standard output of a command to a file, overwriting previous content.
 ```
 
-```>> redirects standard output of a command to a file, appending new content to old content.
 ```
-
-```<
+>> redirects standard output of a command to a file, appending new content to old content.
+```
+```
+<
 ``` redirects standard input to a command.
 
-
-```| redirects standard output of a command to another command.
+```
+| redirects standard output of a command to another command.
 ```
 
 sort: sorts lines of text alphabetically.
