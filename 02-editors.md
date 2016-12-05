@@ -59,13 +59,20 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 ###Q1. Terminal Editor
 
 What terminal editor will you use? How did you make your decision?
-Vim, it seems like that's the one to do!
 
---
+---
+
+Nano. I used it in the command line tutorial and it seemed easy.
+
+---
 
 ###Q2. Graphical Editor
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
+
+---
+
+I am not very picky about customizations so I choose Spyder. I got to try it out some more with python before I fully commit to it though.
 
 
 
