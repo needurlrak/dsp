@@ -9,34 +9,35 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
->> mkdir: creates a new directory in the current working directory
+ mkdir: creates a new directory in the current working directory
 
 
->> touch: creates a new file in the current working directory
+touch: creates a new file in the current working directory
 
 
->> ..: moves the current working directory up on file
+..: moves the current working directory up on file
 
 
->> ls: lists all files and directories in the current working directory
+ls: lists all files and directories in the current working directory
 
 
->> pwd: view the current working directory path
+pwd: view the current working directory path
 
 
 The common redirection commands are:
-
+```
 > redirects standard output of a command to a file, overwriting previous content.
+```
+
+```>> redirects standard output of a command to a file, appending new content to old content.
+```
+
+```<
+``` redirects standard input to a command.
 
 
->> redirects standard output of a command to a file, appending new content to old content.
-
-
-< redirects standard input to a command.
-
-
-| redirects standard output of a command to another command.
-
+```| redirects standard output of a command to another command.
+```
 
 sort: sorts lines of text alphabetically.
 
