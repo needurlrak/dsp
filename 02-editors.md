@@ -71,7 +71,7 @@ What graphical editor will you use? How did you make your decision? What are som
 
 
 
-I am not very picky about customizations so I choose Spyder. I got to try it out some more with python before I fully commit to it though.
+I am not very picky about customizations so I choose Spyder. I should try it out some more with python before I fully commit to it though.
 
 
 
