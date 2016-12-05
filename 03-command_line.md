@@ -9,6 +9,7 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
+
  mkdir: creates a new directory in the current working directory
 
 
@@ -26,7 +27,7 @@ pwd: view the current working directory path
 
 The common redirection commands are:
 
-""">""" redirects standard output of a command to a file, overwriting previous content.
+">" redirects standard output of a command to a file, overwriting previous content.
 
 
 
