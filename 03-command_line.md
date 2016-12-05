@@ -92,9 +92,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > My understanding is that xargs is essentially a way to 'pipe' multiple parameters at once, running the function once for each parameter.
+> > My understanding is that xargs is essentially a way to 'pipe' multiple parameters at once, running the function once for each parameter. For example, say I wanted to create two files, one called blarg and the other called blarg1, I could go
 
+```
+echo blarg blarg1 | xargs mkdir
+```
 
-
- 
+ Honestly, there is probably a better way to make 2 files at once, but this is just an example.
 
