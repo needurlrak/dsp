@@ -25,8 +25,6 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 `pwd:` view the current working directory path
 
 
-The common redirection commands are:
-
 `">"` redirects standard output of a command to a file, overwriting previous content.
 
 
