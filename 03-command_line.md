@@ -80,7 +80,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `-d` Displays only directories. Cuz files are stupid!    
+`-r` Displays contents in reverse order. Love goin backwards.    
+`-g` Displays long format except the owner. I generally know who the owner is (me), so this is nice.  
+`-m` Displays names in comma separated list. Then I can put those files in a CSV reader and analyze em in Python!  
+`-R` Displays subdirectories as well. It's good to look deeply into things.  
 
 ---
 
