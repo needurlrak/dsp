@@ -68,7 +68,7 @@ What do the following commands do:
 
 > > `ls` lists files and directories in current working directory .  
 `ls -a`  lists all files and directories in current working directory, including hidden files.  
-`ls -l`  lists files in current working directory but in long format . 
+`ls -l`  lists files in current working directory but in long format .  
 `ls -lh`  lists file sizes in easy readable format .  
 `ls -lah` lists all files sizes in easy readable format, including hidden files .  
 `ls -t`  lists all files in current .  
