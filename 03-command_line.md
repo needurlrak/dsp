@@ -11,11 +11,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 
 > > `mkdir:` creates a new directory in the current working directory
-
-
 `touch:` creates a new file in the current working directory
-
-
 `..:` moves the current working directory up on file
 
 
