@@ -52,9 +52,9 @@ Did you install Python 2 or 3? Why?
 
 ###Q2. Which Python Version Installed   
 
-> > How can you check the version of Python installed if you happen to be on an unfamiliar computer?
+How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-type 'python --version' into the command line
+> > type 'python --version' into the command line
  
 
 
