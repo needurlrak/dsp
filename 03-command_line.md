@@ -68,6 +68,5 @@ What does `xargs` do? Give an example of how to use it.
 ```
 echo blarg blarg1 | xargs mkdir
 ```
-
  Honestly, there is probably a better way to make 2 files at once, but this is just an example.
 
