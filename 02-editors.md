@@ -61,7 +61,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 What terminal editor will you use? How did you make your decision?
 
 
-Nano. I used it in the command line tutorial and it seemed easy.
+> > Nano. I used it in the command line tutorial and it seemed easy.
 
 ---
 
@@ -71,7 +71,7 @@ What graphical editor will you use? How did you make your decision? What are som
 
 
 
-I am not very picky about customizations so I choose Spyder. I should try it out some more with python before I fully commit to it though.
+> > I am not very picky about customizations so I choose Spyder. I should try it out some more with python before I fully commit to it though.
 
 
 
