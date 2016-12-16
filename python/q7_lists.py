@@ -15,7 +15,12 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    count = 0
+    for word in words:
+        if (len(word) >= 2 and word[0] == word[len(word) - 1]):
+            count += 1
+    return count
+    #raise NotImplementedError
 
 
 def front_x(words):
@@ -32,7 +37,17 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    words.sort()
+    xgroup = list()
+    reggroup = list()
+    for word in words:
+        if word[0] == 'x':
+            xgroup.append(word)
+        else:
+            reggroup.append(word)
+            
+    return xgroup + reggroup
+    #raise NotImplementedError
 
 
 def sort_last(tuples):
@@ -49,7 +64,7 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+   # raise NotImplementedError
 
 
 def remove_adjacent(nums):
@@ -68,7 +83,20 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    new_list = list()
+    if (len(nums) == 0):
+        return nums
+    most_recently_added = nums[0] + 50
+    #this line is simply to initialize most_recently_added and insure that it is not the same as the first element of the lis
+    
+    for num in nums:
+        if (most_recently_added == num):
+            a = 1
+        else:
+            new_list.append(num)
+            most_recently_added = num
+    return new_list
+    #raise NotImplementedError
 
 
 def linear_merge(list1, list2):
@@ -85,4 +113,22 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    i = 0
+    j = 0
+    merged_list = list()
+    cont = True
+    while(cont):
+        if (list1[i] < list2[j]):
+            merged_list.append(list1[i])
+            i += 1
+            if (i == len(list1)):
+                cont = False
+                return (merged_list + list2[j:])
+                
+        else:
+            merged_list.append(list2[j])
+            j += 1
+            if (j == len(list2)):
+                cont = False
+                return (merged_list + list1[i:])
+    #raise NotImplementedError
