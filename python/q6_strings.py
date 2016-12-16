@@ -9,10 +9,7 @@ def donuts(count):
     passed in. However, if the count is 10 or more, then use the word
     'many' instead of the actual count.
     
-    printct = count
-    if (count >= 10):
-        printct =  'many'
-    return("Number of donuts: " + str(printct))
+   
 
 
     >>> donuts(4)
@@ -24,14 +21,15 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    printct = count
+    if (count >= 10):
+        printct =  'many'
+    return("Number of donuts: " + str(printct))
+    #raise NotImplementedError
 
 
 def both_ends(s):
-    if (len(s) >= 2):
-        return(s[:2] + s[len(s) - 2:])
-    else:
-        return("")
+   
     """
     Given a string s, return a string made of the first 2 and the last
     2 chars of the original string, so 'spring' yields 'spng'.
@@ -47,10 +45,16 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if (len(s) >= 2):
+        return(s[:2] + s[len(s) - 2:])
+    else:
+        return("")
+    
 
 
 def fix_start(s):
+   
+
     """
     Given a string s, return a string where all occurences of its
     first char have been changed to '*', except do not change the
@@ -66,7 +70,16 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    str_list = list(s)
+    first_letter = str_list[0]
+    fixed_list = list()
+    for letter in str_list[1:]:
+        if (letter == first_letter):
+            fixed_list.append('*')
+        else:
+            fixed_list.append(letter)
+    return first_letter + ''.join(fixed_list)
+   # raise NotImplementedError
 
 
 def mix_up(a, b):
