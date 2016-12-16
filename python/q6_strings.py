@@ -100,7 +100,7 @@ def mix_up(a, b):
     a_swapped = b[:2] + a[2:]
     b_swapped = a[:2] + b[2:]
     return (a_swapped + ' ' + b_swapped)
-    raise NotImplementedError
+    #raise NotImplementedError
 
 
 def verbing(s):
@@ -117,7 +117,15 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    s_len = len(s)
+    if (s_len >=3):
+        if (s[s_len-3:] == 'ing'):
+            return s + 'ly'
+        else:
+            return s + 'ing'
+    else:
+        return s
+    #raise NotImplementedError
 
 
 def not_bad(s):
@@ -137,6 +145,14 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    ind_not = s.find('not')
+    ind_bad = s.find('bad')
+    final_string = s
+    
+    if (ind_not < ind_bad & ind_bad > -1 & ind_not > -1):
+        final_string = s[:ind_not] + 'good' + s[ind_bad + 3:]
+
+    return final_string
     raise NotImplementedError
 
 
@@ -156,4 +172,12 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    
+    len_a = len(a)
+    len_b = len(b)
+    a_front = a[:int(math.ceil(len_a/2.0))]
+    b_front = b[:int(math.ceil(len_b/2.0))]
+    a_back = a[int(math.ceil(len_a/2.0)):]
+    b_back = b[int(math.ceil(len_b/2.0)):]
+    return(a_front + b_front + a_back + b_back)
     raise NotImplementedError
