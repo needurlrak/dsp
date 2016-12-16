@@ -9,7 +9,6 @@ def donuts(count):
     passed in. However, if the count is 10 or more, then use the word
     'many' instead of the actual count.
     
-    def donuts(count):
     printct = count
     if (count >= 10):
         printct =  'many'
@@ -29,6 +28,10 @@ def donuts(count):
 
 
 def both_ends(s):
+    if (len(s) >= 2):
+        return(s[:2] + s[len(s) - 2:])
+    else:
+        return("")
     """
     Given a string s, return a string made of the first 2 and the last
     2 chars of the original string, so 'spring' yields 'spng'.
