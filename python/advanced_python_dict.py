@@ -5,9 +5,16 @@ Created on Fri Dec 16 21:02:10 2016
 
 @author: karlrudeen
 """
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Dec 16 21:02:10 2016
+
+@author: karlrudeen
+"""
 
 import pandas
-#Create dictionary for part 1
+
 def create_faculty_dictionary():
     facultyfile = open('faculty.csv')
     df = pandas.read_csv(facultyfile)
@@ -31,9 +38,14 @@ def create_faculty_dictionary():
             faculty_dict[faculty_last[i]] = list()
             faculty_dict[faculty_last[i]].append([info[' degree'], info[' title'], info[' email']])
 
-    print(faculty_dict.items()[:3])
+    return faculty_dict
     
-    #create dictionary for part 2
+fac_dict = create_faculty_dictionary()
+print(sorted(fac_dict.items())[:3])
+print(" ")
+
+
+#function for parts 2 and 3   
 def create_fullname_dictionary():
     facultyfile = open('faculty.csv')
     df = pandas.read_csv(facultyfile)
@@ -59,7 +71,7 @@ def create_fullname_dictionary():
     return fullname_dict
 
 
-fulldict = create_fullname_dictionary()    
-
-#create dictionary for part 3
-print(sorted(fulldict.items(), key = lambda entry: entry[0][1]))
+fulldict = create_fullname_dictionary() 
+print(sorted(fulldict.items())[:3])   #output for part 2
+print("")
+print(sorted(fulldict.items(), key = lambda entry: entry[0][1])) #output for part 3
