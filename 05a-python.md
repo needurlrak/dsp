@@ -37,9 +37,10 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> list comprehensions are easy and natural ways to create lists. They are sort of an equivalent of 'set notation' in mathematics. Say I wanted to create a list of the square roots of all the numbers from 1 through 5, I could write   
 ```roots = list(map(lambda num : num**.5, range(1,6)))```   
-I could also use filter to get the same result: ``` roots = list(filter(lambda num : num**.5 in range(1,6), range(1,26)```
-
-
+I could also use filter to get the same result:  
+```roots = list(filter(lambda num : num**.5 in range(1,6), range(1,26)```.  
+Since I have no repeats, and I don't particularly care about the ordering, a set comprension could work here as well.  
+```roots = set(map(lambda num : num**.5, range(1,6)))``` .  
 
 ---
 
