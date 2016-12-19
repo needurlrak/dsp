@@ -41,7 +41,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 I could also use filter to get the same result:  
 ```roots = list(filter(lambda num : num**3 in range(), range(1,26)```.  
 Since I have no repeats, and I don't particularly care about the ordering, a set comprension could work here as well.  
-```roots = set(map(lambda num : num**.5, range(1,6)))``` .  
+```roots = set(map(lambda num : num**3, range(1,6)))``` .  
 Say I wanted to create a dictionary that can be used to look up the cube of an integer. That is, the keys would be integers, and the value would be the cubes of their corresponding keys. I could use dictionary comprehension in the following way:  
 ```root_dict = {a : a**3 for a in range(1,6)}```  
 
