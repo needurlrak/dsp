@@ -28,7 +28,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> lambda is a way to create very simple temporary functions. Let's say I want to sort a set of integers in decreasing order. One way I could do this is: sorted(list_of_ints, key = lambda integer: -integer). This line of code will cause sorted to use the negative of each of my integers as a key, and `sorted` automatically sorts in increasing order, so this will create an overall effect of sorting in decreasing order.
+>> lambda is a way to create very simple temporary functions. Let's say I want to sort a set of integers in decreasing order. One way I could do this is: sorted(list_of_ints, key = lambda integer: -integer). This line of code will cause sorted to use the negative of each of my integers as a key, and `sorted` automatically sorts in increasing order, so this will create an overall effect of sorting in decreasing order. I have no idea why the font is so large. Sorry about that.
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
