@@ -35,12 +35,14 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> list comprehensions are easy and natural ways to create lists. They are sort of an equivalent of 'set notation' in mathematics. Say I wanted to create a list of the square roots of all the numbers from 1 through 5, I could write   
-```roots = list(map(lambda num : num**.5, range(1,6)))```   
+>> list comprehensions are easy and natural ways to create lists. They are sort of an equivalent of 'set notation' in mathematics. Say I wanted to create a list of the cubes of all the numbers from 1 through 5, I could write   
+```roots = list(map(lambda num : num**3, range(1,6)))```   
 I could also use filter to get the same result:  
-```roots = list(filter(lambda num : num**.5 in range(1,6), range(1,26)```.  
+```roots = list(filter(lambda num : num**3 in range(), range(1,26)```.  
 Since I have no repeats, and I don't particularly care about the ordering, a set comprension could work here as well.  
 ```roots = set(map(lambda num : num**.5, range(1,6)))``` .  
+Say I wanted to create a dictionary that can be used to look up the cube of an integer. That is, the keys would be integers, and the value would be the cubes of their corresponding keys. I could use dictionary comprehension in the following way:  
+```root_dict = {a : a**3 for a in range(1,6)}```  
 
 ---
 
