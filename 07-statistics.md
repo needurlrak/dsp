@@ -85,7 +85,7 @@ we know: P(twin | identical twin) = 1
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> The key difference between Bayesian and frequentist statistics is that Bayes allows for a prior distribution, or a prior probability, when it is calculated. With frequentist stats, we are completely focused on the data, with no outside information.
 
 ---
 
